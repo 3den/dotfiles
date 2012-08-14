@@ -1,0 +1,8 @@
+.DS_Store
+thumbs.db
+nbproject/*
+.rvmrc
+*.sw*
+tags
+*xcodeproj/project.xcworkspace
+*xcodeproj/xcuserdata
