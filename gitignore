@@ -2,6 +2,7 @@
 thumbs.db
 nbproject/*
 .rvmrc
+*.xiki
 *.sw*
 tags
 *xcodeproj/project.xcworkspace
