@@ -9,13 +9,13 @@ alias zshreload="source ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias s="subl ."
 
-plugins=(git brew gem rvm bundler node npm)
+plugins=(git brew gem rvm node npm)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source "$HOME/.rvm/scripts/rvm"
-export PATH=$HOME/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
+export PATH=$PATH:./bin:$HOME/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
