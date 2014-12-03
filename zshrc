@@ -19,8 +19,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 source ~/.aliases
 alias edit-alias="vim ~/.aliases"
-alias rundev="sudo ynpm run dev > ~/log/rundev.log &"
-alias fin-td="yroot fin-touchdown"
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
