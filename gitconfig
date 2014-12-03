@@ -1,8 +1,12 @@
+[core]
+  excludesfile = ~/.gitignore
 [push]
 	default = current
 [alias]
 	co = checkout
   br = branch
+  aa = add --all
+  up = pull --rebase origin master
 [color]
   ui = auto
 [color "branch"]

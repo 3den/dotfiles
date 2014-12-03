@@ -1,7 +1,7 @@
 init:
-	ln -s ~/dotfiles/aliases .aliases
-	ln -s ~/dotfiles/gitconfig .gitconfig
-	ln -s ~/dotfiles/gitignore .gitignore
-	ln -sf ~/dotfiles/zshrc .zshrc
+	ln -si ~/dotfiles/aliases ~/.aliases
+	ln -si ~/dotfiles/gitconfig ~/.gitconfig
+	ln -si ~/dotfiles/gitignore ~/.gitignore
+	ln -si ~/dotfiles/zshrc ~/.zshrc
 
 .PHONY: init
