@@ -1,29 +1,20 @@
-[core]
-	excludesfile = /Users/eden/.gitignore
-	editor = /usr/bin/vim
-[user]
-	name = Marcelo Eden
-	email = edendroid@gmail.com
-[github]
-	user = 3den
-	token = af736686991afebc42bac24111653491
 [push]
 	default = current
 [alias]
 	co = checkout
-        br = branch
+  br = branch
 [color]
-        ui = auto
+  ui = auto
 [color "branch"]
-        current = yellow reverse
-        local = yellow
-        remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red bold
-        new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-        added = yellow
-        changed = green
-        untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan

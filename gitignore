@@ -1,9 +1,10 @@
 .DS_Store
 thumbs.db
-nbproject/*
+Thumbs.db
+Session.vim
 .rvmrc
+.*.sw[a-z]
+*.pid
+*.log
 *.xiki
-*.sw*
 tags
-*xcodeproj/project.xcworkspace
-*xcodeproj/xcuserdata

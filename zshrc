@@ -1,27 +1,43 @@
-# Constants
-ZSH=$HOME/.oh-my-zsh # Path to your oh-my-zsh configuration.
-ZSH_THEME="3den" # Set this to "random" to load a random themes
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
 COMPLETION_WAITING_DOTS="true"
 
-# Aliases
-alias zshconfig="vim ~/.zshrc"
-alias zshreload="source ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias s="subl ."
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
 
-plugins=(git brew gem rvm node npm)
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+plugins=(git colorize)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-source "$HOME/.rvm/scripts/rvm"
-export PATH=$PATH:./bin:$HOME/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+# Aliases
+source ~/.aliases
+alias edit-alias="vim ~/.aliases"
+alias rundev="sudo ynpm run dev > ~/log/rundev.log &"
+alias fin-td="yroot fin-touchdown"
 
-# Vim
-alias vim="stty stop '' -ixoff ; vim"
-ttyctl -f # `Frozing' tty, so after any command terminal settings will be restored
+# User configuration
+# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/eden/bin:/home/eden/bin"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
