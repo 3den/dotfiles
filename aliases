@@ -1,1 +1,4 @@
 alias v="vim ."
+alias root-td="yroot fin-touchdown"
+alias rundev="sudo ynpm run dev"
+alias gdelete="git branch --merged | grep -v master | xargs -I% git branch -d %"

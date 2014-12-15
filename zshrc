@@ -23,13 +23,7 @@ alias edit-alias="vim ~/.aliases"
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/eden/bin:/home/eden/bin"
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+export EDITOR="vim"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

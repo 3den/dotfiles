@@ -2,8 +2,7 @@
 thumbs.db
 Thumbs.db
 Session.vim
-.rvmrc
-.*.sw[a-z]
+*.sw[a-z]
 *.pid
 *.log
 *.xiki
