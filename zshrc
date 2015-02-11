@@ -22,7 +22,7 @@ alias edit-alias="vim ~/.aliases"
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/eden/bin:/home/eden/bin"
+export PATH="$HOME/bin:/usr/lib64/qt-3.3/bin:/home/y/bin64:/home/y/bin:$PATH"
 export EDITOR="vim"
 
 # You may need to manually set your language environment
