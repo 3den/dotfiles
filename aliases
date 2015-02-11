@@ -1,4 +1,10 @@
 alias v="vim ."
 alias root-td="yroot fin-touchdown"
+alias pserver="python -m SimpleHTTPServer"
 alias rundev="sudo ynpm run dev"
 alias gdelete="git branch --merged | grep -v master | xargs -I% git branch -d %"
+
+# DB
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias mongol="mongod --smallfiles --noprealloc --nojournal > ~/log/mongo-laika.log &"
