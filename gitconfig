@@ -1,9 +1,9 @@
 [core]
     excludesfile = ~/.gitignore
 [push]
-	default = current
+    default = current
 [alias]
-	co = checkout
+    co = checkout
     br = branch
     aa = add --all
     up = pull --rebase origin master
@@ -23,9 +23,9 @@
     changed = green
     untracked = cyan
 [filter "media"]
-	clean = git media clean %f
-	smudge = git media smudge %f
-	required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
+    required = true
 [user]
-	email = eden@3den.biz
-	name = Marcelo Eden
+    email = eden@3den.biz
+    name = Marcelo Eden
