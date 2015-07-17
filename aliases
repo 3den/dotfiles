@@ -1,8 +1,9 @@
 alias v="vim ."
 alias root-td="yroot fin-touchdown"
 alias pserver="python -m SimpleHTTPServer"
-alias rundev="sudo ynpm run dev"
+alias rundev="sudo PORT=80 ynpm run dev"
 alias gdelete="git branch --merged | grep -v master | xargs -I% git branch -d %"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %Cgreen%ci%Creset %Cblue%an%Creset %s %C(red reverse)%d%Creset'"
 
 # DB
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
