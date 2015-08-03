@@ -12,7 +12,7 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git colorize)
+plugins=(git colorize tmux)
 
 source $ZSH/oh-my-zsh.sh
 
