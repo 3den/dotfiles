@@ -5,8 +5,17 @@ alias rundev="sudo PORT=80 ynpm run dev"
 alias gdelete="git branch --merged | grep -v master | xargs -I% git branch -d %"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %Cgreen%ci%Creset %Cblue%an%Creset %s %C(red reverse)%d%Creset'"
 alias ta="tmux attach"
+alias meteor-beta="~/meteor/meteor"
 
 # DB
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias mongol="mongod --smallfiles --noprealloc --nojournal > ~/log/mongo-laika.log &"
+
+# webdriver
+alias webdriver-start="webdriver-manager start"
+
+# Node
+alias link-node='brew unlink iojs && brew link node && echo Updating NPM && npm install -g npm@latest && echo Using Node.js'
+alias link-io='brew unlink node && brew link --force iojs && echo Updating NPM && npm install -g npm@latest && echo Using io.js'
+

@@ -26,3 +26,6 @@
     clean = git media clean %f
     smudge = git media smudge %f
     required = true
+[user]
+	email = eden@3den.org
+	name = Marcelo Eden
