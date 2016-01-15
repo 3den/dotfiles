@@ -5,7 +5,10 @@ init:
 	ln -si ~/dotfiles/tmux.conf ~/.tmux.conf
 	ln -si ~/dotfiles/zshrc ~/.zshrc
 
-tmux:
-	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ssh:
+	ssh-keygen -t rsa -C "eden@3den.org"
+
+zsh:
+	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 .PHONY: init
