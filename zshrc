@@ -33,3 +33,5 @@ export EDITOR="vim"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
