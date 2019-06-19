@@ -29,3 +29,5 @@
 [user]
 	email = eden@3den.org
 	name = Marcelo Eden
+[branch]
+	autoSetupMerge = always
