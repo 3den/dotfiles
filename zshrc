@@ -13,7 +13,7 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git colorize rbenv rake-fast rails vagrant postgres nvm)
+plugins=(git brew colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,7 +30,6 @@ export EDITOR="vim"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-
 # Load pyenv into the shell by adding
 # the following to ~/.zshrc:
 
@@ -39,12 +38,16 @@ export EDITOR="vim"
 # export RBENV_ROOT=/usr/local/var/rbenv
 # eval "$(rbenv init -)"
 
-export NVM_DIR=~/.nvm
-# . $(brew --prefix nvm)/nvm.sh
-# export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
-
-# PYENV
+# PyENV
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="/usr/local/clamav/bin:/usr/local/clamav/sbin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# PHP
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
